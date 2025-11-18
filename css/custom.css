@@ -1,0 +1,329 @@
+/* ============================
+   RESET Y BASE
+============================ */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #0b0f2c;
+    font-family: 'Verdana', sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+}
+
+
+/* ============================
+   TITULOS
+============================ */
+h1, h2, h4 {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+/* ============================
+   IMÁGENES DE TARJETAS
+============================ */
+.imagen-curso.u-full-width {
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+/* ============================
+   HEADER — MODIFICADO
+============================ */
+header {
+    padding: 25px 0;
+    text-align: center;
+    background: linear-gradient(145deg, #222266, #3a3aff);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+header #logo {
+    width: 130px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+header li {
+    list-style: none;
+}
+
+header li img {
+    width: 42px;
+    cursor: pointer;
+}
+
+
+/* ============================
+   HERO + BUSCADOR CENTRADO
+============================ */
+#hero {
+    background-image: url(../img/logo.png);
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-hero {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255,255,255,0.10);
+    padding: 35px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* BUSCADOR NUEVO */
+#buscador {
+    width: 100%;
+    padding: 15px 60px 15px 25px;
+    font-size: 1.7rem;
+    border-radius: 50px;
+    border: 2px solid #ffffff80;
+    outline: none;
+    background-color: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+#buscador::placeholder {
+    color: #d0d0d0;
+}
+
+/* BOTÓN CIRCULAR */
+.submit-buscador {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    background-image: url(../img/lup.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    text-indent: -9999px; /* Quitar texto */
+}
+
+
+/* ============================
+   CARRITO
+============================ */
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: rgba(30, 0, 60, 0.95);
+    color: #fff;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 350px;
+    border-radius: 18px;
+}
+
+
+/* ============================
+   BARRA
+============================ */
+.barra {
+    padding: 22px 0;
+    background: radial-gradient(circle at 15% 15%, #111540 0%, #3344ff 80%);
+}
+
+.barra p {
+    margin: 0;
+}
+
+
+/* ============================
+   TARJETAS / CURSOS
+============================ */
+#lista-cursos .row {
+    margin-bottom: 25px;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #ccc;
+    background: linear-gradient(145deg, #1a1a40, #2a2aff);
+    border-radius: 22px;
+    color: #fff;
+}
+
+.info-card {
+    padding: 12px 22px;
+}
+
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    color: #ff8080;
+}
+
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffd700;
+}
+
+/* BOTÓN AGREGAR RESPONSIVE */
+.agregar-carrito {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding: 12px 20px; /* más espacio interno */
+    min-height: 48px;   /* altura mínima para 2 líneas */
+    
+    line-height: 1.3;   /* más aire para dos líneas */
+    white-space: normal !important;
+}
+
+.agregar-carrito {
+    white-space: normal !important;  /* permite que el texto se divida */
+    line-height: 1.2;                /* para que no se vea aplastado */
+    word-break: break-word;          /* por si quiere romper palabras */
+    text-align: center;
+}
+
+.agregar-carrito {
+    margin: 12px 0;
+    background: #ffb800;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+/* reducir texto en pantallas */
+@media (max-width: 768px) {
+    .agregar-carrito { font-size: 1.2rem; padding: 10px; }
+}
+
+@media (max-width: 480px) {
+    .agregar-carrito { font-size: 1rem; padding: 8px; }
+}
+
+
+/* ============================
+   FOOTER
+============================ */
+.footer {
+    background: radial-gradient(circle at 10% 10%, #111540 0%, #3344ff 85%);
+    margin-top: 50px;
+    border-top:2px solid #444;
+    padding-top: 45px;   
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: #ffd700;
+}
+
+
+/* ============================
+   BORRAR CURSO
+============================ */
+.borrar-curso {
+    background-color: #ff4444;
+    border-radius: 12px;
+    padding: 6px 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.borrar-curso:hover {
+    background-color: #ff2222;
+}
+
+
+/* ============================
+   RESPONSIVE GENERAL
+============================ */
+@media (max-width: 992px) {
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+
+    .tarjetas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-curso.u-full-width {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+
+    header #logo {
+        width: 100px;
+    }
+
+    #buscador {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 480px) {
+    .agregar-carrito {
+        padding: 12px 15px;
+        height: auto; 
+        width: auto;/* permite crecer */
+    }
+}
