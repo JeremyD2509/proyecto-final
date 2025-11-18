@@ -1,0 +1,270 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #060c2e;
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+}
+
+h1, h2, h4 {
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a40, #3a3aff);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+header img#logo {
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    list-style: none;
+}
+
+header li img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+#hero {
+    background-image: url(../img/logo.png);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.imagen-persona {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+.contenido-hero {
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenido-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contenido-hero p {
+    font-size: 1.6rem;
+}
+
+/* ===== BUSCADOR ===== */
+.contenido-hero form {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+.contenido-hero form #buscador {
+    width: 100%;
+    padding: 12px 50px 12px 20px;
+    font-size: 1.6rem;
+    border-radius: 30px;
+    border: 2px solid #ffffff90;
+    outline: none;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.contenido-hero form #buscador::placeholder {
+    color: #e0e0e0;
+}
+
+.contenido-hero form #buscador:focus {
+    border-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contenido-hero form .submit-buscador {
+    text-indent: -9999px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-image: url(../img/lup.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* ===== CARRITO ===== */
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: rgb(31, 14, 71);
+    color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+/* ===== CURSOS ===== */
+#lista-cursos .row {
+    margin-bottom:20px;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: linear-gradient(135deg,#1a1a40,#3a3aff);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.imagen-curso.u-full-width {
+    width: 200px;
+    height: 200px;    
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.info-card {
+    padding: 10px 20px;
+}
+
+.info-card p, .card h4 {
+    margin-bottom: 5px;
+}
+
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: radial-gradient(87% 275% at 6% 15%, #102054 0, #11366b 23%, #114c80 40%, #1d5a9e 58%, #1e639c 66%, #246dbf 75%, #1c65a9 83%, #2458a0 93%, #1a4a98 100%);
+    margin-top: 40px;
+    border-top:1px solid #aaa;
+    padding-top: 40px;   
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ===== BOTÓN BORRAR CURSO ===== */
+.borrar-curso {
+    background-color: rgb(37, 132, 209);
+    border-radius: 10%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* ===== IMÁGENES ADAPTATIVAS ===== */
+.imagen-persona, 
+.imagen-curso.u-full-width {
+    width: 100%;
+    max-width: 200px; /* tamaño máximo */
+    height: auto;     /* altura proporcional */
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Ajuste para pantallas medianas */
+@media (max-width: 992px) {
+    .imagen-persona, 
+    .imagen-curso.u-full-width {
+        max-width: 150px;
+    }
+}
+
+/* Ajuste para celulares grandes */
+@media (max-width: 768px) {
+    .imagen-persona, 
+    .imagen-curso.u-full-width {
+        max-width: 120px;
+    }
+}
+
+/* Ajuste para celulares pequeños */
+@media (max-width: 480px) {
+    .imagen-persona, 
+    .imagen-curso.u-full-width {
+        max-width: 100px;
+    }
+}
