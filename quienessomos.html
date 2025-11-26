@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBIKAGAMES</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<style>
+    #logo {
+        object-fit: contain;
+        opacity: 0.8;
+    }
+</style>
+<body>
+    <div id="mensaje-carrito" class="mensaje-carrito"></div>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/centro.jpg" id="logo" width="30%" height="50%">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-carrito">
+                        <div id="carrito"> 
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">CUBIKAGAMES</div>
+
+        <div class="navbar-links">
+            <a href="index.html">Inicio</a>
+            <a href="quienessomos.html">Quiénes Somos</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+    </div>
+</nav>
+<section id="hero">
+
+
+
+</section>
+
+<section class="seccion-info">
+    <div class="container">
+        <h2 class="titulo-seccion">¿Quiénes Somos?</h2>
+
+        <p class="texto-seccion">
+            En <strong>CUBIKAGAMES</strong> somos una tienda dedicada a todos los apasionados del mundo del cubo Rubik.
+            Nuestro objetivo es ofrecer productos de calidad, precios accesibles y una experiencia de compra clara,
+            sencilla y rápida.
+        </p>
+
+        <p class="texto-seccion">
+            Comenzamos como un pequeño proyecto para competidores y coleccionistas, y hoy contamos con una variedad
+            creciente de cubos: desde 2x2 y 3x3 clásicos, hasta 7x7, Megaminx, Ghost, Mirror y más.
+        </p>
+
+        <div class="mision-vision">
+            <div class="card-info">
+                <h3>Misión</h3>
+                <p>
+                    Brindar los mejores cubos con entrega rápida, atención personalizada y calidad garantizada.
+                </p>
+            </div>
+
+            <div class="card-info">
+                <h3>Visión</h3>
+                <p>
+                    Ser la tienda líder de rompecabezas y cubos en Bolivia, expandiendo nuestra comunidad de speedcubers.
+                </p>
+            </div>
+        </div>
+
+        <div class="valores">
+            <h3 class="subtitulo">Nuestros Valores</h3>
+            <ul class="lista-valores">
+                <li>Honestidad</li>
+                <li>Compromiso</li>
+                <li>Calidad</li>
+                <li>Confianza</li>
+                <li>Pasión por el cubo</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-simple">
+    <div class="container">
+        <p>&copy; 2025 <strong>CUBIKAGAMES</strong>. Todos los derechos reservados.</p>
+        <p>Hecho con pasión para todos los amantes del cubo Rubik.</p>
+    </div>
+</footer>
+
+
+<script src="js/carrito.js"></script>
+</body>
+</html>

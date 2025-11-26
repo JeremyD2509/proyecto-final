@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CUBIKAGAMES</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+<body>
+<div id="mensaje-carrito" class="mensaje-carrito"></div>
+
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/centro.jpg" id="logo" width="30%" height="50%">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-carrito">
+                        <div id="carrito"> 
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">CUBIKAGAMES</div>
+        <div class="navbar-links">
+            <a href="index.html">Inicio</a>
+            <a href="quienessomos.html">Quiénes Somos</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+    </div>
+</nav>
+<section class="contacto-seccion">
+    <div class="contacto-container">
+        <h2>Contáctanos</h2>
+
+        <div class="contacto-info">
+            <p><strong>Correo:</strong> jeremydiegolimamamani@gmail.com</p>
+            <p><strong>Teléfono:</strong> +591 76136989</p>
+            <p><strong>Dirección:</strong> Calle San Felipe y Arce, Oruro, Bolivia</p>
+
+            <div class="contacto-redes">
+                <a href="https://www.facebook.com/share/1GD3HS82kL/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/jeremy_d_25?igsh=MWZycGU5M3JzOTdrZA==" target="_blank"><img src="img/ig.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@jeremy_dl?_r=1&_t=ZM-91hyk0I7ClH" target="_blank"><img src="img/tik-tok.png" alt="tik-tok"></a>
+                <a href="https://wa.me/qr/EB36CK6UJFKFA1" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="t.me/JeremyDLM" target="_blank"><img src="img/telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+
+        <form class="contacto-form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="footer-simple">
+    <div class="container">
+        <p>&copy; 2025 <strong>CUBIKAGAMES</strong>. Todos los derechos reservados.</p>
+        <p>Hecho con pasión para todos los amantes del cubo Rubik.</p>
+    </div>
+</footer>
+
+<script src="js/carrito.js"></script>
+</body>
+</html>

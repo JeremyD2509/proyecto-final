@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBIKAGAMES</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<style>
+    #logo {
+        object-fit: contain;
+        opacity: 0.8;
+    }
+</style>
+<body>
+    <div id="mensaje-carrito" class="mensaje-carrito"></div>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/centro.jpg" id="logo" width="30%" height="50%">
+            </div>
+            
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-carrito">
+                        <div id="carrito"> 
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">CUBIKAGAMES</div>
+
+        <div class="navbar-links">
+            <a href="index.html">Inicio</a>
+            <a href="quienessomos.html">Quiénes Somos</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+    </div>
+</nav>
+
+
+<section id="hero">
+    <div class="contenido-hero">
+        <h2>Encuentra tu cubo ideal</h2>
+<form action="#" id="busqueda" method="post" class="formulario">
+    <div class="buscador-wrapper">
+        <input class="buscador" type="text" placeholder="¿Qué cubo te interesa?" id="buscador">
+        <button type="submit" class="submit-buscador">
+            <img src="img/lupa.png" alt="Buscar" class="lupa-boton">
+        </button>
+    </div>
+</form>
+</div>
+</section>
+
+
+
+<div id="lista-cursos" class="container">
+    <p class="encabezado">CUBIKAGAMES es una tienda virtual la cual busca la atencion a clientes amantes de los cubos rubik.</p>
+
+    <h4 id="encabezado" class="encabezado">CUBOS DISPONIBLES</h4>
+
+    <!-- Fila 1 -->
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/cubo2.jfif" width="200px" height="200px" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 3x3 Clásico</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 350 <span class="u-pull-right">Bs 350</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/cubo1.webp" width="200px" height="200px" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 2x2</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 250 <span class="u-pull-right">Bs 250</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/4x4.jfif" width="150px" height="200px" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 4x4</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 500 <span class="u-pull-right">Bs 500</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 2 -->
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/5x5.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 5x5</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 650 <span class="u-pull-right">Bs 650</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/pyra.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo Pyraminx</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 400 <span class="u-pull-right">Bs 400</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/mega.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo Megaminx</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 900 <span class="u-pull-right">Bs 900</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 3 -->
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/mirror.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo Mirror 3x3</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 550 <span class="u-pull-right">Bs 550</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/ghost.webp" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo Ghost</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 750 <span class="u-pull-right">Bs 750</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/sk.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo Skewb</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 450 <span class="u-pull-right">Bs 450</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 4 -->
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/6x6.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 6x6</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 800 <span class="u-pull-right">Bs 800</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/7x7.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 7x7</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 1000 <span class="u-pull-right">Bs 1000</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/3x3sk.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 3x3 Stickerless</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 360 <span class="u-pull-right">Bs 360</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 5 -->
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/2x2sk.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 2x2 Stickerless</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 270 <span class="u-pull-right">Bs 270</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/4x4sk.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 4x4 Stickerless</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 520 <span class="u-pull-right">Bs 520</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/5x5.jfif" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Cubo 5x5 Stickerless</h4>
+                    <p>Marca XYZ</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">Bs 680 <span class="u-pull-right">Bs 680</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer-simple">
+    <div class="container">
+        <p>&copy; 2025 <strong>CUBIKAGAMES</strong>. Todos los derechos reservados.</p>
+        <p>Hecho con pasión para todos los amantes del cubo Rubik.</p>
+    </div>
+</footer>
+
+
+<script src="js/carrito.js"></script>
+</body>
+</html>
