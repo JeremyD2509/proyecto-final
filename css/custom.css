@@ -580,3 +580,28 @@ header li img {
         font-size: 1.2rem;
     }
 }
+
+
+
+
+#carrito {
+    position: relative;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.btn-cerrar:hover {
+    background: #c0392b;
+}
