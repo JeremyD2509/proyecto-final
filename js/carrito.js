@@ -147,3 +147,21 @@ function mostrarMensaje(mensaje) {
     contMensaje.classList.remove("mostrar");
   }, 2000);
 }
+
+
+
+
+
+
+
+const carrito = document.querySelector('#carrito');
+const botonCerrar = document.querySelector('#cerrar-carrito');
+const imgCarrito = document.querySelector('#img-carrito');
+
+botonCerrar.addEventListener('click', () => {
+    carrito.style.display = 'none';
+});
+
+imgCarrito.addEventListener('click', () => {
+    carrito.style.display = 'block';
+});
